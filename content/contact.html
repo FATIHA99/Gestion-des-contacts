@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark mb-5">
+        <div class="container-fluid">
+            <a class="navbar-brand">Contact list</a>
+            <form class="d-flex">
+                <label class="text-secondary m-2">name</label>
+                <button class="btn btn-outline-secondary border-0" type="submit">Contact</button>
+                <button class="btn btn-outline-secondary border-0" type="submit">Logout</button>
+            </form>
+        </div>
+    </nav>
+    <div class="container">
+        <h1> contacts</h1>
+        <a href="list.html"> contact list </a>
+        <span class="text-secondary"> no contact</span>
+        <h2> Add Contact </h2>
+
+
+        <form>
+            <!-- 2 column grid layout with text inputs for the first and last names -->
+            <div class="row mb-4">
+                <div>
+                    <div class="form-outline"> <label class="form-label" for="form6Example1"> Name :</label>
+                        <input type="text" id="form6Example1" class="form-control" placeholder="enter name" />
+
+                    </div>
+                </div>
+                <div>
+                    <div class="form-outline"> <label class="form-label" for="form6Example2">Phone :</label>
+                        <input type="text" id="form6Example2" class="form-control" placeholder="enter phone" />
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Text input -->
+            <div class="form-outline mb-4">
+                <label class="form-label" for="form6Example3">Email :</label>
+                <input type="text" id="form6Example3" class="form-control" placeholder="enter email" />
+
+            </div>
+
+            <!-- Message input -->
+            <div class="form-outline mb-4">
+                <label class="form-label" for="form6Example7">Address</label>
+                <textarea class="form-control" id="form6Example7" rows="4" placeholder="enter address"></textarea>
+
+            </div>
+
+
+
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-primary btn-block mb-4">Save</button>
+        </form>
+    </div>
+</body>
+
+</html>
