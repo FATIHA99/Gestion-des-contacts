@@ -24,11 +24,9 @@ function validationAdd() {
     // phone
     if (phoneValider(phone.value)) {
         valider(phone);
-    } else if (phone.value == '') { //facultative
-        isValidate = true;
 
     } else {
-        AfficherError(phone, 'phone not valid ');
+        AfficherError(phone, ' Not valid')
         isValidate = false
     }
     // email
@@ -43,7 +41,7 @@ function validationAdd() {
         isValidate = false
     }
     //  adresse 
-    if (adress.value.trim().length >= 4) {
+    if (adress.value.trim().length >= 255) {
         AfficherError(adress, 'max character is 255 ');
         adress.style = ' border-color:red';
         isValidate = false;
@@ -83,6 +81,7 @@ function EmailValider(email) {
 }
 // phone expression : +91 (123) 456-7890
 function phoneValider(phone) {
-    const format = /^(\+0?1\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$/;
+    // const format = /^(\+0?1\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$/;
+    const format = /^[0-9\+\-]*$/;
     return format.test(phone);
 }
